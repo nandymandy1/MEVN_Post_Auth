@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP|Poppins|Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  background-color: #fbfcfc !important;
+}
+
+$error-color: #e74c3c;
+$second-color: #28b463;
+$active-color: rgba(#28b463, 0.8);
+$enable-responsive-font-sizes: true;
+
+.navbar {
+  font-family: "Noto Sans JP", sans-serif !important;
+  font-size: 0.9em !important;
+}
+
+.card {
+  border-radius: 0px !important;
+  border: 2px solid rgba($second-color, 0.2) !important;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn {
+  border-radius: 0px !important;
+}
+.list-group {
+  border: 0px !important;
+  border-radius: 0px !important;
+  &-item {
+    border: 0px !important;
+    box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.08) !important;
+    border-radius: 0px !important;
+  }
+}
+
+.form-control {
+  border-radius: 0px !important;
+  &:focus {
+    outline: none !important;
+    border: 1px solid $second-color !important;
+    box-shadow: 0 0 5px $second-color !important;
+  }
+}
+
+.form-control.is-invalid {
+  border-radius: 0px !important;
+  border: 1px solid $error-color !important;
+  box-shadow: 0 0 5px $error-color !important;
+}
+
+.text-success {
+  color: $second-color !important;
+}
+
+.btn-success {
+  border: 0px !important;
+  background-color: $second-color !important;
+  &:hover {
+    background-color: $active-color !important;
+  }
+}
+
+.link {
+  &-success {
+    color: $second-color !important;
+    &:hover {
+      text-decoration: none !important;
+      color: $active-color !important;
+    }
+  }
+}
+
+#nprogress .bar {
+  background: $second-color !important;
+  height: 3px !important;
+}
+
+#nprogress .spinner-icon {
+  width: 30px !important;
+  height: 30px !important;
+  margin-top: 50px !important;
+  border-top-color: $second-color !important;
+  border-left-color: $second-color !important;
+}
+
+.display-4 {
+  font-size: 2.7em !important;
+}
